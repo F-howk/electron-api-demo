@@ -9,7 +9,10 @@ processCrashBtn.addEventListener('click', (event) => {
     width: 400,
     height: 320,
     webPreferences: {
-      nodeIntegration: true
+      webSecurity:false,
+      nodeIntegration: true,
+      contextIsolation:false,
+      enableRemoteModule:true
     }
   });
 
